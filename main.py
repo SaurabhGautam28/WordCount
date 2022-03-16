@@ -14,7 +14,7 @@ import logging
 from datetime import date
 """creating logging instance which will generate application log for each run in applicationLogs folder"""
 log_file_date = date.today().strftime("%d%m%Y")
-log_file_name = 'applicationLogs/applog_' + str(log_file_date) + '.txt'
+log_file_name = 'applicationLogs/applog_' + str(log_file_date) + '.log'
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s:%(levelname)s:%(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
