@@ -1,0 +1,7 @@
+2022-03-16 19:45:31:INFO:Pipeline execution Started
+2022-03-16 19:45:31:INFO:Checking availability of file SourceData/input_16032022.txt
+2022-03-16 19:45:31:INFO:File SourceData/input_16032022.txt available!
+2022-03-16 19:45:31:INFO:Looping through each line of text file
+2022-03-16 19:45:31:INFO:Processing Started for Line Number - 1
+2022-03-16 19:45:31:INFO:Processing Completed for Line Number - 1
+2022-03-16 19:45:31:INFO:All lines processed and dictionary is updated with updated count
