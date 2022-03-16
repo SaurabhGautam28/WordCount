@@ -12,6 +12,8 @@ import sys
 import re
 import logging
 from datetime import date
+
+
 """creating logging instance which will generate application log for each run in applicationLogs folder"""
 log_file_date = date.today().strftime("%d%m%Y")
 log_file_name = 'applicationLogs/applog_' + str(log_file_date) + '.log'
@@ -45,6 +47,12 @@ def get_file_name(source_directory, source_file):
 
 def main():
     text = get_file_name(source_directory='SourceData', source_file='input')
+    """Checking is file is empty"""
+    if text.read(1):
+        logging.info("File is not empty")
+    else:
+        logging.error("File is empty")
+        sys.exit()
     """Creating empty python dictionary to keep key value pair"""
     key_value = dict()
     """Reading each line in text file"""
