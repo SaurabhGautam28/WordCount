@@ -45,6 +45,32 @@ python: 2
 of: 1
 ```
 
+## Testing
+
+The application includes both unit and system tests to ensure its functionality and robustness.
+
+### Unit Tests
+
+Unit tests focus on individual components of the application, primarily functions within `main.py`. These tests are located in the `test_main.py` file.
+
+To run the unit tests, execute the following command in your terminal:
+```bash
+python -m unittest test_main.py
+```
+
+### System Tests
+
+System tests, also known as end-to-end tests, verify the application's behavior as a whole. These tests simulate real-world usage by running the `main.py` script with various inputs and checking the output and log files. The system tests are located in the `test_system.py` file.
+
+To run the system tests, execute the following command in your terminal:
+```bash
+python -m unittest test_system.py
+```
+Alternatively, you can run them directly if the file is executable and contains the `unittest.main()` block:
+```bash
+python test_system.py
+```
+
 ## Assumptions
 
 The application operates based on the following assumptions:
